@@ -20,6 +20,6 @@ class MainActivity : AppCompatActivity() {
         Log.i("MainActivity", "Buttons added")
 
         clickMeButton.setOnClickListener { greetTextView.text = if(greetTextView.text == "Hello, World!") "Good Bye,World!" else "Hello, World!"}
-        clickMeButton2.setOnClickListener { greetTextView.text = if(greetTextView.text == "Hello, World!") "Good Bye,World!" else "Hello, World!"}
+        clickMeButton2.setOnClickListener { greetTextView.text = if(greetTextView.text == "Hello, World!") "Good Bye,World!" else "Hello, WorId!"}
     }
 }
