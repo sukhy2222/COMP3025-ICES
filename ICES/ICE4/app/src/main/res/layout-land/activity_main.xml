@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/thirdRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView">
+
+        <Button
+            android:id="@+id/clearButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Gray"
+            android:tag="clear"
+            android:text="@string/clear"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/percentButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Gray"
+            android:tag="percent"
+            android:text="@string/percent"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/backspaceButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Gray"
+            android:tag="backspace"
+            android:text="@string/backspace"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/divideButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:tag="divide"
+            android:text="@string/divide" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/fourthRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondRow">
+
+
+        <Button
+            android:id="@+id/sevenButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:tag="seven"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/eightButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:tag="eight"
+            android:text="@string/eight" />
+
+
+        <Button
+            android:id="@+id/nineButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:tag="nine"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/multiplyButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:tag="multiply"
+            android:text="@string/multiply" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdRow"
+        app:layout_constraintBottom_toTopOf="@id/fifhtRow">
+
+
+        <Button
+            android:id="@+id/fourButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:tag="four"
+            android:text="@string/four" />
+
+
+        <Button
+            android:id="@+id/fiveButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:tag="five"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/sixButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:tag="six"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/minusButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Green"
+            android:tag="minus"
+            android:text="@string/minus"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifhtRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthRow"
+        app:layout_constraintBottom_toTopOf="@id/sixthRow"
+        >
+
+
+        <Button
+            android:id="@+id/oneButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:tag="one"
+            android:text="@string/one" />
+
+
+        <Button
+            android:id="@+id/twoButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:tag="two"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/threeButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:tag="three"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/plusButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Green"
+            android:tag="plus"
+            android:text="@string/plus"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sixthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifhtRow"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <Button
+            android:id="@+id/plus_minusButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Green"
+            android:tag="plus_minus"
+            android:text="@string/plusMinus"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/zeroButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:tag="zero"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/decimalButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="decimal"
+            android:text="@string/decimal" />
+
+        <Button
+            android:id="@+id/equalsButton"
+            style="@style/CalculatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Green"
+            android:tag="equals"
+            android:text="@string/equals"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingHorizontal="@dimen/px_10"
+        android:text="0"
+        android:textSize="@dimen/resultTextViewFontSize"
+        app:layout_constraintBottom_toTopOf="@+id/firstRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
